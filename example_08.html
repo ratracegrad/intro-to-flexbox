@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flexbox Demo</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                width: 80%;
+                margin: 25px auto;
+                background: lightskyblue;
+            }
+            h2 {
+                margin: 0;
+                font-size: 14px;
+            }
+            .orangeBox {
+                background-color: peachpuff;
+                height: 40px;
+                width: 40px;
+            }
+            .greenBox {
+                background-color: lightgreen;
+                height: 50px;
+                width: 40px;
+            }
+            .purpleBox {
+                background-color: mediumpurple;
+                height: 60px;
+                width: 40px;
+            }
+            .flexStart {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                border: 1px solid gray;
+                margin-right: 10px;
+                height: 250px;
+                width: 100px;
+            }
+            .flexEnd {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                border: 1px solid gray;
+                margin-right: 20px;
+                height: 250px;
+                width: 100px;
+            }
+            .center {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid gray;
+                margin-right: 20px;
+                height: 250px;
+                width: 100px;
+            }
+            .flexSpaceBetween {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 1px solid gray;
+                margin-right: 20px;
+                height: 250px;
+                width: 100px;
+            }
+            .flexSpaceAround {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border: 1px solid gray;
+                margin-right: 20px;
+                height: 250px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex;">
+            <div>
+                <h2>flex-start</h2>
+                <div class="flexStart">
+                    <div class="orangeBox"></div>
+                    <div class="greenBox"></div>
+                    <div class="purpleBox"></div>
+                </div>
+            </div>
+            <div>
+                <h2>flex-end</h2>
+                <div class="flexEnd">
+                    <div class="orangeBox"></div>
+                    <div class="greenBox"></div>
+                    <div class="purpleBox"></div>
+                </div>
+            </div>
+            <div>
+                <h2>center</h2>
+                <div class="center">
+                    <div class="orangeBox"></div>
+                    <div class="greenBox"></div>
+                    <div class="purpleBox"></div>
+                </div>
+            </div>
+            <div>
+                <h2>space-between</h2>
+                <div class="flexSpaceBetween">
+                    <div class="orangeBox"></div>
+                    <div class="greenBox"></div>
+                    <div class="purpleBox"></div>
+                </div>
+            </div>
+            <div>
+                <h2>space-around</h2>
+                <div class="flexSpaceAround">
+                    <div class="orangeBox"></div>
+                    <div class="greenBox"></div>
+                    <div class="purpleBox"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

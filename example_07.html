@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flexbox Demo</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                height: 40px;
+            }
+            body {
+                width: 80%;
+                margin: 25px auto;
+                background: lightskyblue;
+            }
+            h2 {
+                margin: 0;
+                font-size: 14px;
+            }
+            .orangeBox {
+                background-color: peachpuff;
+                width: 75px;
+            }
+            .greenBox {
+                background-color: lightgreen;
+                width: 50px;
+            }
+            .purpleBox {
+                background-color: mediumpurple;
+                width: 100px;
+            }
+            .flexStart {
+                display: flex;
+                justify-content: flex-start;
+                border: 1px solid gray;
+                margin-bottom: 10px;
+            }
+            .flexEnd {
+                display: flex;
+                justify-content: flex-end;
+                border: 1px solid gray;
+                margin-bottom: 20px;
+            }
+            .center {
+                display: flex;
+                justify-content: center;
+                border: 1px solid gray;
+                margin-bottom: 20px;
+            }
+            .flexSpaceBetween {
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid gray;
+                margin-bottom: 20px;
+            }
+            .flexSpaceAround {
+                display: flex;
+                justify-content: space-around;
+                border: 1px solid gray;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>flex-start</h2>
+        <div class="flexStart">
+            <div class="orangeBox"></div>
+            <div class="greenBox"></div>
+            <div class="purpleBox"></div>
+        </div>
+        <h2>flex-end</h2>
+        <div class="flexEnd">
+            <div class="orangeBox"></div>
+            <div class="greenBox"></div>
+            <div class="purpleBox"></div>
+        </div>
+        <h2>center</h2>
+        <div class="center">
+            <div class="orangeBox"></div>
+            <div class="greenBox"></div>
+            <div class="purpleBox"></div>
+        </div>
+        <h2>space-between</h2>
+        <div class="flexSpaceBetween">
+            <div class="orangeBox"></div>
+            <div class="greenBox"></div>
+            <div class="purpleBox"></div>
+        </div>
+        <h2>space-around</h2>
+        <div class="flexSpaceAround">
+            <div class="orangeBox"></div>
+            <div class="greenBox"></div>
+            <div class="purpleBox"></div>
+        </div>
+    </body>
+</html>

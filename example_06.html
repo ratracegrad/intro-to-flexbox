@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flexbox Demo</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                line-height: 50px;
+            }
+            .flexContainer {
+                width: 200px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+            }
+            .button {
+                width: 50px;
+                text-align: center;
+                background-color: lightgray;
+                border: 1px solid black;
+            }
+            .orange {
+                background-color: orange;
+                color: white;
+            }
+            .darkGray {
+                background-color: darkgray;
+            }
+            .result {
+                border: 1px solid black;
+                flex-grow: 1;
+                text-align: right;
+                background: black;
+                color: white;
+                padding: 0 7px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexContainer">
+            <div class="result">0</div>
+        </div>
+        <div class="flexContainer">
+            <div class="button darkGray">AC</div>
+            <div class="button darkGray">+/-</div>
+            <div class="button darkGray">%</div>
+            <div class="button orange">/</div>
+        </div>
+        <div class="flexContainer">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button orange">x</div>
+        </div>
+        <div class="flexContainer">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button orange">-</div>
+        </div>
+        <div class="flexContainer">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button orange">+</div>
+        </div>
+        <div class="flexContainer">
+            <div class="button zero">0</div>
+            <div class="button">.</div>
+            <div class="button orange" style="flex: 2">=</div>
+        </div>
+    </body>
+</html>
